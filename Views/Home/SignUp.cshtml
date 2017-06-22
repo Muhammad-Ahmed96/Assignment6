@@ -33,7 +33,7 @@
 
             $("#emailDiv").focusout(function () {
                 var email = $("#mail").val();
-                if (email != "") {
+           
                     if (validateEmail(email) == false) {
                         $("#emailDiv").removeClass("has-success");
                         $("#email-span").removeClass("glyphicon-ok");
@@ -48,12 +48,10 @@
                         $("#email-span").addClass("glyphicon-ok");
                         $("#email-span").css("color", "green");
                     }
-                }
             });
 
             $("#passDiv").focusout(function () {
                 var pass = $("#pass").val();
-                if (pass != "") {
                     if (ValidatePass(pass) == false) {
                         $("#passDiv").removeClass("has-success");
                         $("#pass-span").removeClass("glyphicon-ok");
@@ -68,7 +66,6 @@
                         $("#pass-span").addClass("glyphicon-ok");
                         $("#pass-span").css("color", "green");
                     }
-                }
             });
 
             $("#btnLogin").click(function () {
